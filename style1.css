@@ -33,3 +33,22 @@ th, td{
     padding: 30px;
 }
 
+.para{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.link1:hover{
+    color: red;
+}
+
+.link2:visited{
+    color: gray;
+}
+
+.link3:active{
+    color: orange;
+}
