@@ -142,8 +142,33 @@
     </div>
 
 <br><br><br>
+<div>
+    <form name="myform">
+        <input type="text" placeholder="username" name="username">
+        <input type="password" placeholder="password" name="password">
+        <input type="submit" onclick="return validateform()">
+    </form>
+</div>
+
+<br><br>
+
 
     <script>
+
+        function validateform(){
+            let u_name = document.forms['myform']['username'].value
+            let u_password = document.forms['myform']['password'].value
+
+            if(u_name=='' || u_password==''){
+                alert('username or password is empty, please fill out the input field')
+            }
+
+            else{
+                setTimeout(alert('Success!'), 3000)
+            }
+        }
+
+
         let num1 = 10
         let num2 = 5
         console.log(num1+num2)
